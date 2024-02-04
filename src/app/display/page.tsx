@@ -384,14 +384,14 @@ const Display: React.FC = () => {
     speed: 1000,
     className: "center",
     centerMode: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     rows: 2,
     centerPadding: "20px",
     slidesPerRow: 3,
-    fade: true,
+    
     cssEase: "linear",
 
   };
