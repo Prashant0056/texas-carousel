@@ -383,13 +383,13 @@ const Display: React.FC = () => {
     infinite: true,
     speed: 1000,
     className: "center",
-    centerMode: true,
+    
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     rows: 2,
-    centerPadding: "20px",
+   
     slidesPerRow: 3,
     
     cssEase: "linear",
