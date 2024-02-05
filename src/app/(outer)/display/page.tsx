@@ -370,6 +370,8 @@ import {
   Card,
 } from "@/components/ui/card";
 import DATA from './data'
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Display: React.FC = () => {
@@ -404,15 +406,18 @@ const Display: React.FC = () => {
 
       return (
         <div key={index} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 md:p-6 lg:p-8">
+          
           {pageData.map((item) => (
-            <Card key={item.stall} className="w-full">
+            <Card key={item.stall} className="w-full h-[400px]">
               <CardHeader>
                 <CardTitle>{item.stall}</CardTitle>
                 <CardDescription className="uppercase">
                   {item.project}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent
+              
+              >
                 <img
                   alt="Placeholder Image"
                   className="w-full h-auto mb-4"
@@ -434,9 +439,26 @@ const Display: React.FC = () => {
   };
 
   return (
+    <>
+    
+        <Image src="/logo.png" width={250} height={24}
+        className="fixed z-10 top-5 left-5"
+        alt="Texas" />
+     
+    <Image
+          src="/bg.webp"
+          alt="bg"
+          width={1000}
+          height={1000}
+          className="w-screen z--1 h-screen fixed top-0 bottom-0 left-0 right-0"
+          />
+<div className="fixed z-10 w-screen pt-[100px] px-[300px] h-screen absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
     <Slider {...settings} initialSlide={currentPage}>
       {renderCards()}
     </Slider>
+</div>
+    </>
   );
 };
 

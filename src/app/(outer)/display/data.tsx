@@ -323,7 +323,7 @@ const DATA = [
       stall: "Stall: 45",
       project: "Dhumbal",
       description: "The classic Dhumbal game now available online made possible by the students of CSIT ",
-      image: "image-url"
+      image: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYQCLXcqmatDbD7A56o3tr74gN9hHSn45c2qlkd6DceDrSX6niQHJVvMuz2Ag4ToXvas4tjZAngGVR5I_CbGEBoZXvEJwA=w1920-h912"
     },
     {
       stall: "Stall: 46",
